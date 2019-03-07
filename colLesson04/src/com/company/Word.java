@@ -1,12 +1,14 @@
 package com.company;
 
 public class Word {
-    public  int number;
-    public  Word(int input_number){
-       number = input_number;
+    public String word;
+    public String meaning;
+    public Word(String word,String meaning) {
+        this.word = word;
+        this.meaning = meaning;
     }
-    public  void Register(){
-        System.out.println(number + "件登録しました。");
+    public String toString(){
+        return "単語：" + this.word + "　日本語：" + this.meaning;
     }
-}
 
+}
